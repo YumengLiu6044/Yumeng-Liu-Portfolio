@@ -58,8 +58,6 @@ a {
 .project-item {
     position: relative;
     display: block;
-    text-transform: uppercase;
-    text-decoration: none;
     color: #262626;
     transition: .5s;
     z-index: 1;

@@ -1,41 +1,488 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yumeng Liu's Website</title>
-    <link rel='stylesheet' href="style.css"></style>
-</head>
-<body id="'body">
-    <section>
-        <h1 class="title" id="site-title">Welcome to Yumeng Liu's Website!</h1>
-        <div class="container">
-            <div class="yumeng-pic">
-                <img src="img/Yumeng_pic.jpeg" alt="A picture of Yumeng" id="yumeng-pic"></img>
-                <figcaption>Sushi Man</figcaption>
-            </div>
+<html lang="english">
+  <head>
+    <title>Yumeng Liu Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
 
-            <div id="intro">
-                <p>Hello, I'm <strong>Yumeng Liu</strong>. I'm an undergraduate CS student at <strong>UC Irvine</strong></p>
-                <p>I like coding, going to the gym, hanging out with my <em><a href="https://www.linkedin.com/in/sneha-sadhwani-a67b8b228/">girlfriend</a></em></p>
-                <p>Here are some projects I did :</p>
-                <ul id="project-list">
-                    <li class="project-item">aMazed</li>
-                    <li class="project-item">GaussianElimination</li>
-                    <li class="project-item">C++ Asteroid</li>
-                </ul>
-            </div>
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 300vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
 
-            <div class="peter-pic">
-                <img src="img/peter_the_anteater.jpg" alt="'Peter the Anteater, local UCI legend" id="peter-pic"></img>
-                <figcaption>Peter the Anteater, local UCI legend</figcaption>
-            </div>
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background: var(--dl-color-theme-neutral-light);
 
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="desktop1-container">
+        <div class="desktop1-desktop1">
+          <div class="desktop1-header">
+            <div class="desktop1-title1">
+              <span class="desktop1-text10">Yumeng Liu</span>
+            </div>
+            <div class="desktop1-navigation">
+              <a href="#about"><p class="desktop1-text11">About</p></a>
+              <a href="#projects"><p class="desktop1-text11">Projects</p></a>
+              <a href="#experiences"><p class="desktop1-text11">Experiences</p></a>
+            </div>
+            <div class="desktop1-contacts">
+              <a href="https://www.linkedin.com/in/yumeng-liu-09731a2ab/" target="_blank">
+                <img
+                  alt="SocialIcons588"
+                  src="public/external/socialicons588-ztsq.svg"
+                  class="desktop1-social-icons1"
+                />
+              </a>
+              <a href="https://github.com/YumengLiu6044" target="_blank">
+                <img
+                  alt="SocialIcons5810"
+                  src="public/external/socialicons5810-vxvl.svg"
+                  class="desktop1-social-icons2"
+                />
+              </a>
+              <a href="mailto:yumel13@uci.edu">
+                <img
+                  alt="mail5812"
+                  src="public/external/mail5812-pw.svg"
+                  class="desktop1-mail"
+                />
+              </a>
+            </div>
+          </div>
+          <a name="about">
+            <div class="desktop1-about">
+              <div class="desktop1-frame1">
+                <img
+                  alt="Headshot13784"
+                  src="public/external/headshot13784-xuvg-300w.png"
+                  class="desktop1-headshot1"
+                />
+                <div class="desktop1-descriptioin">
+                  <span class="desktop1-text14">Hi, I’m Yumeng</span>
+                  <span class="desktop1-text15">
+                    I study Computer Science at UC Irvine. I have experience with
+                    iOS development, front end design, as well as machine
+                    learning. Check out what I am working on right now.
+                  </span>
+                </div>
+              </div>
+              <div class="desktop1-contact">
+                <a href="#contacts"><span class="desktop1-text16">Contact Me</span></a>
+              </div>
+            </div>
+          </a>
+          <div class="desktop1-projects">
+            <a id="projects"><span class="desktop1-text17">Top Projects</span></a>
+            <div class="desktop1h-stack">
+              <a href="https://github.com/YumengLiu6044/Weather-With-Search" target="_blank">
+                <div class="desktop1-project1">
+                  <img
+                    alt="Rectangle15628"
+                    src="public/external/rectangle15628-4y8.svg"
+                    class="desktop1-rectangle11"
+                  />
+                  <span class="desktop1-text18">Weather</span>
+                  <img
+                    alt="cloudsun10x5630"
+                    src="public/external/cloudsun10x5630-1gzh-300w.png"
+                    class="desktop1-cloudsun10x"
+                  />
+                </div>
+              </a>
+              <a href="https://github.com/YumengLiu6044/Chat-With-Meng" target="_blank">
+                <div class="desktop1-project2">
+                  <img
+                    alt="Rectangle13766"
+                    src="public/external/rectangle13766-55vn.svg"
+                    class="desktop1-rectangle12"
+                  />
+                  <span class="desktop1-text19">Meng Chat</span>
+                  <img
+                    alt="MengChatLogo3767"
+                    src="public/external/mengchatlogo3767-8q49-300h.png"
+                    class="desktop1-meng-chat-logo"
+                  />
+                </div>
+              </a>
+              <a href="https://github.com/YumengLiu6044/GaussianElimination" target="_blank">
+                <div class="desktop1-project3">
+                  <img
+                    alt="Rectangle13779"
+                    src="public/external/rectangle13779-iviz.svg"
+                    class="desktop1-rectangle13"
+                  />
+                  <span class="desktop1-text20">Matrix Solver</span>
+                  <img
+                    alt="droppedimage13780"
+                    src="public/external/droppedimage13780-fszb-200h.png"
+                    class="desktop1-droppedimage1"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+          <a id="experiences">
+            <div class="desktop1-experiences">
+              <span class="desktop1-text24">Experiences</span>
+              <div class="desktop1-experience1">
+                <div class="desktop1-company1">
+                  <span class="desktop1-text25">Humanity Unleashed</span>
+                  <img
+                    alt="humunlogo13725"
+                    src="public/external/humunlogo13725-2k3g-300h.png"
+                    class="desktop1-humunlogo11"
+                  />
+                </div>
+                <div class="desktop1-description1">
+                  <span class="desktop1-text26">Front End Developer</span>
+                  <span class="desktop1-text27">Oct 2024 - Present</span>
+                  <span class="desktop1-text28">
+                    Conducted UX research and designed overhauled congress.gov.
+                    Researched on modern Generative AI UI design patterns.
+                    Implemented value elicitation methods for political leanings.
+                    Worked with the front end team to create website designs on
+                    Figma.
+                  </span>
+                  <div class="desktop1-skills1">
+                    <div class="desktop1-skill1">
+                      <span class="desktop1-text29">Figma</span>
+                    </div>
+                    <div class="desktop1-skill2">
+                      <span class="desktop1-text30">ReactJS</span>
+                    </div>
+                    <div class="desktop1-skill3">
+                      <span class="desktop1-text31">UX Research</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="desktop1-experience2">
+                <div class="desktop1-company2">
+                  <span class="desktop1-text32">ESW</span>
+                  <img
+                    alt="humunlogo15639"
+                    src="public/external/humunlogo15639-t8af4c-300h.png"
+                    class="desktop1-humunlogo12"
+                  />
+                </div>
+                <div class="desktop1-description2">
+                  <div class="desktop1-title2">
+                    <span class="desktop1-text33">Lead Software Developer</span>
+                    <span class="desktop1-text34">Oct 2024 - Present</span>
+                  </div>
+                  <span class="desktop1-text35">
+                    Developed a mobile app for the Engineers For a Sustainable
+                    World Club where users upload pictures of trash. Trained a
+                    Sequential Model with a Kaggle Dataset and built an inference
+                    API on Huggingface Space. Used Figma to create designs of the
+                    user interface. Used LucidChart to create architecture design
+                    diagrams
+                  </span>
+                  <div class="desktop1-skills2">
+                    <div class="desktop1-skill4">
+                      <span class="desktop1-text36">Figma</span>
+                    </div>
+                    <div class="desktop1-skill5">
+                      <span class="desktop1-text37">SwiftUI</span>
+                    </div>
+                    <div class="desktop1-skill6">
+                      <span class="desktop1-text38">xCode</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="desktop1-experience3">
+                <div class="desktop1-company3">
+                  <span class="desktop1-text39">Outlier AI</span>
+                  <img
+                    alt="humunlogo15673"
+                    src="public/external/humunlogo15673-jso8-300h.png"
+                    class="desktop1-humunlogo13"
+                  />
+                </div>
+                <div class="desktop1-description3">
+                  <div class="desktop1-title3">
+                    <span class="desktop1-text40">Prompt Engineer</span>
+                    <span class="desktop1-text41">Aug - Sep 2024</span>
+                  </div>
+                  <span class="desktop1-text42">
+                    Used RLHF to train LLMs in answering Swift coding questions.
+                    Wrote critical prompts under the categories of RAG, solution
+                    reasoning, code generation, and bug fixing. Used best coding
+                    practices to write, analyze, and test Swift code.
+                  </span>
+                  <div class="desktop1-skills3">
+                    <div class="desktop1-skill7">
+                      <span class="desktop1-text43">LLM</span>
+                    </div>
+                    <div class="desktop1-skill8">
+                      <span class="desktop1-text44">Swift</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="desktop1-contact-me">
+            <a id="contacts"><span class="desktop1-text45">Contact Me</span></a>
+            <div class="desktop1-input-fields">
+              <div class="desktop1-email">
+                <span class="desktop1-text46">Your email</span>
+                <input type="text" class="desktop1-rectangle21">
+              </div>
+              <div class="desktop1-subject">
+                <span class="desktop1-text47">Subject</span>
+                <input type="text" class="desktop1-rectangle21">
+              </div>
+              <div class="desktop1-message">
+                <span class="desktop1-text48">Message</span>
+                <textarea class="desktop1-rectangle23" style="padding-top: 10px;"></textarea>
+              </div>
+            </div>
+            <div class="desktop1-submit">
+              <span class="desktop1-text49">Submit</span>
+            </div>
+          </div>
         </div>
-    </section>
-</body>
-<footer>
-    <p>yumel13@uci.edu</p>
-    <a href="https://github.com/YumengLiu6044">My github repo</a>
-</footer>
+      </div>
+    </div>
+  </body>
 </html>

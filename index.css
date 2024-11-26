@@ -1,7 +1,7 @@
 .desktop1-container {
   width: 100%;
   display: flex;
-  overflow: auto;
+  overflow:  scroll;
   min-height: 100vh;
   align-items: center;
   flex-direction: column;

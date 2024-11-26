@@ -65,10 +65,16 @@
   font-weight: 700;
   line-height: normal;
   font-stretch: normal;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: all 0.25s ease-in-out;
+}
+.desktop1-text11::after {
+  transition: all 0.25s ease-in-out;
 }
 
 .desktop1-text11:hover { 
-  text-decoration: underline;
+  text-decoration-color: rgba(61, 81, 105, 1);
 }
 
 .desktop1-contacts {

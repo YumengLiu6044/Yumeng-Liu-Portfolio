@@ -967,6 +967,32 @@ input[type="text"], textarea {
   caret-color: rgba(61, 81, 105, 1);
 }
 
+input[type="submit"] {
+  font-family: Outfit;
+  font-weight: 500;
+  font-size: 40px;
+  font-style: Medium;
+  color: rgba(255, 255, 255, 1);
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 19px;
+  border-color: rgba(255, 255, 255, 1);
+  border-width: 5px;
+  transition: all 0.25s ease-in-out;
+}
+
+
+input[type="submit"]::after {
+  transition: all 0.25s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  transform: scale(1.1, 1.1);
+  color:rgba(61, 81, 105, 1);
+  border-color: rgba(61, 81, 105, 1);
+}
 
 
 .desktop1-subject {
@@ -1025,8 +1051,6 @@ input[type="text"], textarea {
   box-sizing: content-box;
   align-items: center;
   flex-shrink: 0;
-  border-color: rgba(254, 254, 255, 1);
-  color: rgba(254, 254, 255, 1);
   border-style: solid;
   border-width: 7px;
   border-radius: 17px;
@@ -1044,15 +1068,3 @@ input[type="text"], textarea {
   color: rgba(61, 81, 105, 1);
 }
 
-.desktop1-text49 {
-  width: 186px;
-  height: auto;
-  font-size: 40px;
-  font-style: Medium;
-  text-align: center;
-  font-family: Outfit;
-  font-weight: 500;
-  line-height: normal;
-  font-stretch: normal;
-  text-decoration: none;
-}

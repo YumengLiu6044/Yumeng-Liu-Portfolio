@@ -12,7 +12,7 @@
   height: 3547px;
   display: flex;
   padding: 51px 0;
-  overflow: hidden;
+  overflow: scroll;
   align-items: center;
   flex-shrink: 0;
   flex-direction: column;

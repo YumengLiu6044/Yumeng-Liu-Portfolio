@@ -1,7 +1,7 @@
 .desktop1-container {
   width: 100%;
   display: flex;
-  overflow:  scroll;
+  overflow: auto;
   min-height: 100vh;
   align-items: center;
   flex-direction: column;
@@ -12,7 +12,7 @@
   height: 3547px;
   display: flex;
   padding: 51px 0;
-  overflow: scroll;
+  overflow: hidden;
   align-items: center;
   flex-shrink: 0;
   flex-direction: column;
@@ -171,6 +171,7 @@
   width: 299px;
   display: flex;
   padding: 11px 0;
+  overflow: hidden;
   box-shadow: 5px 3px 4px 0px rgba(0, 0, 0, 0.25) ;
   align-items: center;
   flex-shrink: 0;
@@ -204,6 +205,7 @@
   gap: 52px;
   height: 623px;
   display: flex;
+  overflow-x: hidden;
   align-self: stretch;
   align-items: center;
   flex-shrink: 0;
@@ -237,7 +239,7 @@
   width: 316px;
   height: 303px;
   display: flex;
-  overflow: scroll;
+  overflow: hidden;
   position: relative;
   align-items: center;
   flex-shrink: 0;
@@ -287,7 +289,7 @@
   width: 316px;
   height: 303px;
   display: flex;
-  overflow: scroll;
+  overflow: hidden;
   position: relative;
   align-items: center;
   flex-shrink: 0;
@@ -337,7 +339,7 @@
   width: 318px;
   height: 303px;
   display: flex;
-  overflow: scroll;
+  overflow: hidden;
   position: relative;
   align-items: center;
   flex-shrink: 0;
@@ -519,7 +521,7 @@
   height: 34px;
   display: flex;
   padding: 0 26px;
-  overflow: scroll;
+  overflow: hidden;
   align-items: center;
   border-radius: 19px;
   justify-content: center;
@@ -543,7 +545,7 @@
   height: 34px;
   display: flex;
   padding: 0 26px;
-  overflow: scroll;
+  overflow: hidden;
   align-items: center;
   border-radius: 19px;
   justify-content: center;
@@ -567,7 +569,7 @@
   height: 34px;
   display: flex;
   padding: 0 26px;
-  overflow: scroll;
+  overflow: hidden;
   align-items: center;
   border-radius: 19px;
   justify-content: center;
@@ -687,7 +689,7 @@
   height: 34px;
   display: flex;
   padding: 0 26px;
-  overflow: scroll;
+  overflow: hidden;
   align-items: center;
   border-radius: 19px;
   justify-content: center;
@@ -711,7 +713,7 @@
   height: 34px;
   display: flex;
   padding: 0 26px;
-  overflow: scroll;
+  overflow: hidden;
   align-items: center;
   border-radius: 19px;
   justify-content: center;
@@ -735,7 +737,7 @@
   height: 34px;
   display: flex;
   padding: 0 26px;
-  overflow: scroll;
+  overflow: hidden;
   align-items: center;
   border-radius: 19px;
   justify-content: center;
@@ -856,7 +858,7 @@
   height: 34px;
   display: flex;
   padding: 0 26px;
-  overflow: scroll;
+  overflow: hidden;
   align-items: center;
   border-radius: 19px;
   justify-content: center;
@@ -880,7 +882,7 @@
   height: 34px;
   display: flex;
   padding: 0 26px;
-  overflow: scroll;
+  overflow: hidden;
   align-items: center;
   border-radius: 19px;
   justify-content: center;

@@ -9,7 +9,6 @@
 .desktop1-desktop1 {
   gap: 31px;
   width: 100%;
-  height: 3547px;
   display: flex;
   padding: 51px 0;
   overflow: hidden;
@@ -409,8 +408,7 @@
   text-decoration: underline;
 }
 .desktop1-experiences {
-  gap: 77px;
-  height: 1217px;
+  gap: 100px;
   display: flex;
   padding: 44px 103px;
   align-self: stretch;
@@ -431,7 +429,7 @@
   font-stretch: normal;
   text-decoration: none;
 }
-.desktop1-experience1 {
+.desktop1-experience {
   gap: 57px;
   width: 1108px;
   display: flex;
@@ -486,6 +484,7 @@
   font-weight: 600;
   line-height: normal;
   font-stretch: normal;
+  white-space: nowrap;
   text-decoration: none;
 }
 .desktop1-text27 {
@@ -550,6 +549,7 @@
   gap: 10px;
   height: 34px;
   display: flex;
+  white-space: nowrap;
   padding: 0 26px;
   overflow: hidden;
   align-items: center;
@@ -593,15 +593,6 @@
   line-height: 20px;
   font-stretch: normal;
   text-decoration: none;
-}
-.desktop1-experience2 {
-  gap: 57px;
-  width: 1108px;
-  display: flex;
-  padding: 0 21px;
-  align-items: flex-start;
-  flex-shrink: 0;
-  justify-content: space-between;
 }
 .desktop1-company2 {
   gap: 25px;
@@ -761,15 +752,6 @@
   line-height: 20px;
   font-stretch: normal;
   text-decoration: none;
-}
-.desktop1-experience3 {
-  gap: 57px;
-  width: 1108px;
-  display: flex;
-  padding: 0 21px;
-  align-items: flex-start;
-  flex-shrink: 0;
-  justify-content: space-between;
 }
 .desktop1-company3 {
   gap: 25px;

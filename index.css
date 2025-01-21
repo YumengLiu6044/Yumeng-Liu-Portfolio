@@ -465,9 +465,10 @@
   border-color: rgba(120, 159, 207, 1);
   border-radius: 52px;
 }
-.desktop1-description1 {
+.desktop1-description {
   width: 713px;
   height: 284px;
+  gap: 20px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -622,14 +623,6 @@
   border-color: rgba(120, 159, 207, 1);
   border-radius: 52px;
 }
-.desktop1-description2 {
-  gap: 0;
-  width: 713px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  flex-shrink: 0;
-}
 .desktop1-title2 {
   gap: 78px;
   display: flex;
@@ -780,14 +773,6 @@
   box-sizing: content-box;
   border-color: rgba(120, 159, 207, 1);
   border-radius: 52px;
-}
-.desktop1-description3 {
-  gap: 0px;
-  width: 713px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  flex-shrink: 0;
 }
 .desktop1-title3 {
   gap: 107px;
